@@ -1,0 +1,444 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (os_linux_zero.cpp:254), pid=11593, tid=0xab887460
+#  fatal error: caught unhandled signal 11
+#
+# JRE version:  (8.0_162-b12) (build )
+# Java VM: OpenJDK Zero VM (25.162-b12 interpreted mode linux-arm )
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xab606848):  JavaThread "main" [_thread_in_Java, id=11612, stack(0xab709000,0xab888000)]
+
+Stack: [0xab709000,0xab888000],  sp=0xab7ca11c,  free space=772k
+Java frames:
+ 0xab88660c: stack_word[6]         = 0xab8865c4
+ 0xab886610: stack_word[5]         = 0x99407608
+ 0xab886614: stack_word[4]         = 0x00000001
+ 0xab886618: stack_word[3]         = 0x994075b8
+ 0xab88661c: stack_word[2]         = 0x994075b8
+ 0xab886620: stack_word[1]         = 0x99407448
+ 0xab886624: stack_word[0]         = 0x99407590
+ 0xab886628: istate->_thread       = 0xab606848
+ 0xab88662c: istate->_bcp          = 0x9905d7d1 (bci 25)
+ 0xab886630: istate->_locals       = 0xab886674
+ 0xab886634: istate->_constants    = 0x9905d960
+ 0xab886638: istate->_method       = sun.reflect.Reflection.<clinit>()V
+ 0xab88663c: istate->_mdx          = 0x00000000
+ 0xab886640: istate->_stack        = 0xab886618
+ 0xab886644: istate->_msg          = 0x00000008
+ 0xab886648: istate->_result       = 0x9905eb60
+ 0xab88664c: (istate->_result)     = 0xa9559140
+ 0xab886650: (istate->_result)     = 0x00000003
+ 0xab886654: istate->_prev_link    = 0x00000000
+ 0xab886658: istate->_oop_temp     = 0x00000000
+ 0xab88665c: istate->_stack_base   = 0xab886628
+ 0xab886660: istate->_stack_limit  = 0xab886608
+ 0xab886664: istate->_monitor_base = 0xab886628
+ 0xab886668: istate->_self_link    = 0xab886628
+ 0xab88666c: frame_type            = INTERPRETER_FRAME
+ 0xab886670: next_frame            = 0xab886680
+
+ 0xab886674: local[0]              = 0x99407590
+ 0xab886678: call_wrapper          = 0xab7ca97c
+ 0xab88667c: frame_type            = ENTRY_FRAME
+ 0xab886680: next_frame            = 0xab8866e4
+
+ 0xab886684: local[5]              = 0xab886650
+ 0xab886688: local[4]              = 0x99407418
+ 0xab88668c: local[3]              = 0x00000000
+ 0xab886690: local[2]              = 0x99407408
+ 0xab886694: local[1]              = 0x99407408
+ 0xab886698: local[0]              = 0x99402b28
+ 0xab88669c: istate->_thread       = 0xab606848
+ 0xab8866a0: istate->_bcp          = 0x99013e76 (bci 14)
+ 0xab8866a4: istate->_locals       = 0xab8866e4
+ 0xab8866a8: istate->_constants    = 0x99034180
+ 0xab8866ac: istate->_method       = sun.misc.Unsafe.<clinit>()V
+ 0xab8866b0: istate->_mdx          = 0x00000000
+ 0xab8866b4: istate->_stack        = 0xab886690
+ 0xab8866b8: istate->_msg          = 0x00000003
+ 0xab8866bc: istate->_result       = 0x99010ed0
+ 0xab8866c0: (istate->_result)     = 0xa955917c
+ 0xab8866c4: (istate->_result)     = 0x00000003
+ 0xab8866c8: istate->_prev_link    = 0x00000000
+ 0xab8866cc: istate->_oop_temp     = 0x00000000
+ 0xab8866d0: istate->_stack_base   = 0xab88669c
+ 0xab8866d4: istate->_stack_limit  = 0xab886680
+ 0xab8866d8: istate->_monitor_base = 0xab88669c
+ 0xab8866dc: istate->_self_link    = 0xab88669c
+ 0xab8866e0: frame_type            = INTERPRETER_FRAME
+ 0xab8866e4: next_frame            = 0xab8866f0
+
+ 0xab8866e8: call_wrapper          = 0xab7cafd4
+ 0xab8866ec: frame_type            = ENTRY_FRAME
+ 0xab8866f0: next_frame            = 0xab886744
+
+ 0xab8866f4: local[1]              = 0x00000000
+ 0xab8866f8: local[0]              = 0xab8866c4
+ 0xab8866fc: istate->_thread       = 0xab606848
+ 0xab886700: istate->_bcp          = 0x9905bbd0 (bci 0)
+ 0xab886704: istate->_locals       = 0xab886744
+ 0xab886708: istate->_constants    = 0x9905bd28
+ 0xab88670c: istate->_method       = sun.misc.SharedSecrets.<clinit>()V
+ 0xab886710: istate->_mdx          = 0x00000000
+ 0xab886714: istate->_stack        = 0xab8866f8
+ 0xab886718: istate->_msg          = 0x00000002
+ 0xab88671c: istate->_result       = 0x00000000
+ 0xab886720: (istate->_result)     = 0x9905abb8
+ 0xab886724: (istate->_result)     = 0x9905a9d0
+ 0xab886728: istate->_prev_link    = 0x00000000
+ 0xab88672c: istate->_oop_temp     = 0x00000000
+ 0xab886730: istate->_stack_base   = 0xab8866fc
+ 0xab886734: istate->_stack_limit  = 0xab8866f0
+ 0xab886738: istate->_monitor_base = 0xab8866fc
+ 0xab88673c: istate->_self_link    = 0xab8866fc
+ 0xab886740: frame_type            = INTERPRETER_FRAME
+ 0xab886744: next_frame            = 0xab886750
+
+ 0xab886748: call_wrapper          = 0xab7cb62c
+ 0xab88674c: frame_type            = ENTRY_FRAME
+ 0xab886750: next_frame            = 0xab8867b0
+
+ 0xab886754: local[4]              = 0xab886714
+ 0xab886758: local[3]              = 0x00000002
+ 0xab88675c: local[2]              = 0xab8867b0
+ 0xab886760: local[1]              = 0x99406c08
+ 0xab886764: local[0]              = 0x99406c08
+ 0xab886768: istate->_thread       = 0xab606848
+ 0xab88676c: istate->_bcp          = 0x98fd2dc7 (bci 71)
+ 0xab886770: istate->_locals       = 0xab8867b8
+ 0xab886774: istate->_constants    = 0x99033e08
+ 0xab886778: istate->_method       = java.lang.ref.Reference.<clinit>()V
+ 0xab88677c: istate->_mdx          = 0x00000000
+ 0xab886780: istate->_stack        = 0xab886760
+ 0xab886784: istate->_msg          = 0x00000003
+ 0xab886788: istate->_result       = 0x9905a9d0
+ 0xab88678c: (istate->_result)     = 0xa9559140
+ 0xab886790: (istate->_result)     = 0x00000003
+ 0xab886794: istate->_prev_link    = 0x00000000
+ 0xab886798: istate->_oop_temp     = 0x00000000
+ 0xab88679c: istate->_stack_base   = 0xab886768
+ 0xab8867a0: istate->_stack_limit  = 0xab886750
+ 0xab8867a4: istate->_monitor_base = 0xab886768
+ 0xab8867a8: istate->_self_link    = 0xab886768
+ 0xab8867ac: frame_type            = INTERPRETER_FRAME
+ 0xab8867b0: next_frame            = 0xab8867c4
+
+ 0xab8867b4: local[1]              = 0x99406880
+ 0xab8867b8: local[0]              = 0x99404d60
+ 0xab8867bc: call_wrapper          = 0xab886864
+ 0xab8867c0: frame_type            = ENTRY_FRAME
+ 0xab8867c4: next_frame            = 0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0xab660400 JavaThread "Reference Handler" daemon [_thread_blocked, id=11618, stack(0x98980000,0x98b00000)]
+=>0xab606848 JavaThread "main" [_thread_in_Java, id=11612, stack(0xab709000,0xab888000)]
+
+Other Threads:
+  0xab65bc40 VMThread [stack: 0x98cbd000,0x98d3c000] [id=11615]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 2432K, used 29K [0x99400000, 0x996a0000, 0x9e950000)
+  eden space 2176K,   1% used [0x99400000, 0x99407648, 0x99620000)
+  from space 256K,   0% used [0x99620000, 0x99620000, 0x99660000)
+  to   space 256K,   0% used [0x99660000, 0x99660000, 0x996a0000)
+ tenured generation   total 5504K, used 0K [0x9e950000, 0x9eeb0000, 0xa9400000)
+   the space 5504K,   0% used [0x9e950000, 0x9e950000, 0x9e950200, 0x9eeb0000)
+ Metaspace       used 693K, capacity 2200K, committed 2200K, reserved 4400K
+
+Card table byte_map: [0xa9458000,0xa94d9000] byte_map_base: 0xa8f8e000
+
+Polling page: 0xac0bd000
+
+CodeCache: size=32768Kb used=67Kb max_used=67Kb free=32700Kb
+ bounds [0xa9559000, 0xa9581000, 0xab559000]
+ total_blobs=44 nmethods=0 adapters=37
+ compilation: disabled (interpreter mode)
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.331 Thread 0xab606848 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x99406e88) thrown at [/build/java8-openjdk/src/jdk8u-jdk8u162-b12/hotspot/src/share/vm/prims/jni.cp
+Event: 0.332 Thread 0xab606848 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x99407158) thrown at [/build/java8-openjdk/src/jdk8u-jdk8u162-b12/hotspot/src/share/vm/prims/jni.cpp, line 4011]
+
+Events (10 events):
+Event: 0.328 loading class sun/misc/SharedSecrets
+Event: 0.330 loading class sun/misc/SharedSecrets done
+Event: 0.330 loading class java/lang/NoSuchMethodError
+Event: 0.330 loading class java/lang/IncompatibleClassChangeError
+Event: 0.331 loading class java/lang/IncompatibleClassChangeError done
+Event: 0.331 loading class java/lang/NoSuchMethodError done
+Event: 0.332 loading class sun/reflect/Reflection
+Event: 0.333 loading class sun/reflect/Reflection done
+Event: 0.333 loading class java/util/HashMap
+Event: 0.335 loading class java/util/HashMap done
+
+
+Dynamic libraries:
+0f000000-0f001000 r-xp 00000000 fd:01 144701     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/bin/javac
+0f010000-0f011000 r--p 00000000 fd:01 144701     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/bin/javac
+0f011000-0f012000 rw-p 00001000 fd:01 144701     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/bin/javac
+0f012000-0f034000 rw-p 00000000 00:00 0 
+10000000-10001000 r-xp 00000000 fd:01 133617     /data/data/com.termux/files/usr/tmp/prooted-5793-GwEfZ5
+1f000000-1f021000 r-xp 00000000 fd:01 208623     /data/data/com.termux/files/home/arch/usr/lib/ld-2.26.so
+1f030000-1f031000 r--p 00020000 fd:01 208623     /data/data/com.termux/files/home/arch/usr/lib/ld-2.26.so
+1f031000-1f032000 rw-p 00021000 fd:01 208623     /data/data/com.termux/files/home/arch/usr/lib/ld-2.26.so
+98800000-98821000 rw-p 00000000 00:00 0 
+98821000-98900000 ---p 00000000 00:00 0 
+98980000-98983000 ---p 00000000 00:00 0 
+98983000-98b00000 rw-p 00000000 00:00 0          [stack:11618]
+98b00000-98b21000 rw-p 00000000 00:00 0 
+98b21000-98c00000 ---p 00000000 00:00 0 
+98cbb000-98cbc000 ---p 00000000 00:00 0 
+98cbc000-98d8a000 rw-p 00000000 00:00 0          [stack:11615]
+98d8a000-98f59000 r--s 03c2b000 fd:01 144413     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar
+98f59000-991da000 rw-p 00000000 00:00 0 
+991da000-99400000 ---p 00000000 00:00 0 
+99400000-996a0000 rw-p 00000000 00:00 0 
+996a0000-9e950000 ---p 00000000 00:00 0 
+9e950000-9eeb0000 rw-p 00000000 00:00 0 
+9eeb0000-a9400000 ---p 00000000 00:00 0 
+a9402000-a9405000 rw-p 00000000 00:00 0 
+a9405000-a9458000 ---p 00000000 00:00 0 
+a9458000-a945a000 rw-p 00000000 00:00 0 
+a945a000-a9482000 ---p 00000000 00:00 0 
+a9482000-a9486000 rw-p 00000000 00:00 0 
+a9486000-a94d8000 ---p 00000000 00:00 0 
+a94d8000-a94da000 rw-p 00000000 00:00 0 
+a94da000-a9559000 ---p 00000000 00:00 0 
+a9559000-a9581000 rwxp 00000000 00:00 0 
+a9581000-ab559000 ---p 00000000 00:00 0 
+ab559000-ab560000 r-xp 00000000 fd:01 9888       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libzip.so
+ab560000-ab56f000 ---p 00007000 fd:01 9888       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libzip.so
+ab56f000-ab570000 r--p 00006000 fd:01 9888       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libzip.so
+ab570000-ab571000 rw-p 00007000 fd:01 9888       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libzip.so
+ab571000-ab57a000 r-xp 00000000 fd:01 208725     /data/data/com.termux/files/home/arch/usr/lib/libnss_files-2.26.so
+ab57a000-ab589000 ---p 00009000 fd:01 208725     /data/data/com.termux/files/home/arch/usr/lib/libnss_files-2.26.so
+ab589000-ab58a000 r--p 00008000 fd:01 208725     /data/data/com.termux/files/home/arch/usr/lib/libnss_files-2.26.so
+ab58a000-ab58b000 rw-p 00009000 fd:01 208725     /data/data/com.termux/files/home/arch/usr/lib/libnss_files-2.26.so
+ab58b000-ab591000 rw-p 00000000 00:00 0 
+ab591000-ab599000 rw-s 00000000 fd:01 198769     /data/data/com.termux/files/home/arch/tmp/hsperfdata_root/11593
+ab599000-ab5bd000 r-xp 00000000 fd:01 9915       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libjava.so
+ab5bd000-ab5cc000 ---p 00024000 fd:01 9915       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libjava.so
+ab5cc000-ab5cd000 r--p 00023000 fd:01 9915       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libjava.so
+ab5cd000-ab5ce000 rw-p 00024000 fd:01 9915       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libjava.so
+ab5ce000-ab5d8000 r-xp 00000000 fd:01 9899       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libverify.so
+ab5d8000-ab5e7000 ---p 0000a000 fd:01 9899       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libverify.so
+ab5e7000-ab5e8000 r--p 00009000 fd:01 9899       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libverify.so
+ab5e8000-ab5e9000 rw-p 0000a000 fd:01 9899       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/libverify.so
+ab5e9000-ab5ef000 r-xp 00000000 fd:01 208484     /data/data/com.termux/files/home/arch/usr/lib/librt-2.26.so
+ab5ef000-ab5fe000 ---p 00006000 fd:01 208484     /data/data/com.termux/files/home/arch/usr/lib/librt-2.26.so
+ab5fe000-ab5ff000 r--p 00005000 fd:01 208484     /data/data/com.termux/files/home/arch/usr/lib/librt-2.26.so
+ab5ff000-ab600000 rw-p 00006000 fd:01 208484     /data/data/com.termux/files/home/arch/usr/lib/librt-2.26.so
+ab600000-ab663000 rw-p 00000000 00:00 0 
+ab663000-ab700000 ---p 00000000 00:00 0 
+ab707000-ab708000 ---p 00000000 00:00 0 
+ab708000-ab709000 rw-p 00000000 00:00 0 
+ab709000-ab70c000 ---p 00000000 00:00 0 
+ab70c000-ab888000 rw-p 00000000 00:00 0          [stack:11612]
+ab888000-ab8a4000 r-xp 00000000 fd:01 208879     /data/data/com.termux/files/home/arch/usr/lib/libgcc_s.so.1
+ab8a4000-ab8b3000 ---p 0001c000 fd:01 208879     /data/data/com.termux/files/home/arch/usr/lib/libgcc_s.so.1
+ab8b3000-ab8b4000 r--p 0001b000 fd:01 208879     /data/data/com.termux/files/home/arch/usr/lib/libgcc_s.so.1
+ab8b4000-ab8b5000 rw-p 0001c000 fd:01 208879     /data/data/com.termux/files/home/arch/usr/lib/libgcc_s.so.1
+ab8b5000-ab8bc000 r-xp 00000000 fd:01 208746     /data/data/com.termux/files/home/arch/usr/lib/libffi.so.6.0.4
+ab8bc000-ab8cb000 ---p 00007000 fd:01 208746     /data/data/com.termux/files/home/arch/usr/lib/libffi.so.6.0.4
+ab8cb000-ab8cc000 r--p 00006000 fd:01 208746     /data/data/com.termux/files/home/arch/usr/lib/libffi.so.6.0.4
+ab8cc000-ab8cd000 rw-p 00007000 fd:01 208746     /data/data/com.termux/files/home/arch/usr/lib/libffi.so.6.0.4
+ab8cd000-ab940000 r-xp 00000000 fd:01 208510     /data/data/com.termux/files/home/arch/usr/lib/libm-2.26.so
+ab940000-ab94f000 ---p 00073000 fd:01 208510     /data/data/com.termux/files/home/arch/usr/lib/libm-2.26.so
+ab94f000-ab950000 r--p 00072000 fd:01 208510     /data/data/com.termux/files/home/arch/usr/lib/libm-2.26.so
+ab950000-ab951000 rw-p 00073000 fd:01 208510     /data/data/com.termux/files/home/arch/usr/lib/libm-2.26.so
+ab951000-abeaf000 r-xp 00000000 fd:01 9918       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/server/libjvm.so
+abeaf000-abebe000 ---p 0055e000 fd:01 9918       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/server/libjvm.so
+abebe000-abeca000 r--p 0055d000 fd:01 9918       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/server/libjvm.so
+abeca000-abedd000 rw-p 00569000 fd:01 9918       /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/jre/lib/arm/server/libjvm.so
+abedd000-abef0000 rw-p 00000000 00:00 0 
+abef0000-ac01f000 r-xp 00000000 fd:01 208884     /data/data/com.termux/files/home/arch/usr/lib/libc-2.26.so
+ac01f000-ac02f000 ---p 0012f000 fd:01 208884     /data/data/com.termux/files/home/arch/usr/lib/libc-2.26.so
+ac02f000-ac031000 r--p 0012f000 fd:01 208884     /data/data/com.termux/files/home/arch/usr/lib/libc-2.26.so
+ac031000-ac032000 rw-p 00131000 fd:01 208884     /data/data/com.termux/files/home/arch/usr/lib/libc-2.26.so
+ac032000-ac035000 rw-p 00000000 00:00 0 
+ac035000-ac037000 r-xp 00000000 fd:01 209013     /data/data/com.termux/files/home/arch/usr/lib/libdl-2.26.so
+ac037000-ac046000 ---p 00002000 fd:01 209013     /data/data/com.termux/files/home/arch/usr/lib/libdl-2.26.so
+ac046000-ac047000 r--p 00001000 fd:01 209013     /data/data/com.termux/files/home/arch/usr/lib/libdl-2.26.so
+ac047000-ac048000 rw-p 00002000 fd:01 209013     /data/data/com.termux/files/home/arch/usr/lib/libdl-2.26.so
+ac048000-ac055000 r-xp 00000000 fd:01 144722     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/lib/arm/jli/libjli.so
+ac055000-ac064000 ---p 0000d000 fd:01 144722     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/lib/arm/jli/libjli.so
+ac064000-ac065000 r--p 0000c000 fd:01 144722     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/lib/arm/jli/libjli.so
+ac065000-ac066000 rw-p 0000d000 fd:01 144722     /data/data/com.termux/files/home/arch/usr/lib/jvm/java-8-openjdk/lib/arm/jli/libjli.so
+ac066000-ac079000 r-xp 00000000 fd:01 209072     /data/data/com.termux/files/home/arch/usr/lib/libz.so.1.2.11
+ac079000-ac088000 ---p 00013000 fd:01 209072     /data/data/com.termux/files/home/arch/usr/lib/libz.so.1.2.11
+ac088000-ac089000 r--p 00012000 fd:01 209072     /data/data/com.termux/files/home/arch/usr/lib/libz.so.1.2.11
+ac089000-ac08a000 rw-p 00013000 fd:01 209072     /data/data/com.termux/files/home/arch/usr/lib/libz.so.1.2.11
+ac08a000-ac0a0000 r-xp 00000000 fd:01 208922     /data/data/com.termux/files/home/arch/usr/lib/libpthread-2.26.so
+ac0a0000-ac0b0000 ---p 00016000 fd:01 208922     /data/data/com.termux/files/home/arch/usr/lib/libpthread-2.26.so
+ac0b0000-ac0b1000 r--p 00016000 fd:01 208922     /data/data/com.termux/files/home/arch/usr/lib/libpthread-2.26.so
+ac0b1000-ac0b2000 rw-p 00017000 fd:01 208922     /data/data/com.termux/files/home/arch/usr/lib/libpthread-2.26.so
+ac0b2000-ac0b6000 rw-p 00000000 00:00 0 
+ac0bd000-ac0be000 r--p 00000000 00:00 0 
+be913000-be934000 rw-p 00000000 00:00 0          [stack]
+bef9e000-bef9f000 r-xp 00000000 00:00 0          [sigpage]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+
+VM Arguments:
+jvm_args: -Dapplication.home=/usr/lib/jvm/java-8-openjdk -Xms8m 
+java_command: com.sun.tools.javac.Main BelajarJava1.java
+java_class_path (initial): /usr/lib/jvm/java-8-openjdk/lib/tools.jar:/usr/lib/jvm/java-8-openjdk/classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/root/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x4e0cfc], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0x4e0cfc], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x3db648], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x3db648], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x3db648], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x3db648], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x3db500], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+
+
+---------------  S Y S T E M  ---------------
+
+OS:NAME="Arch Linux ARM"
+ID=archarm
+ID_LIKE=arch
+PRETTY_NAME="Arch Linux ARM"
+ANSI_COLOR="0;36"
+HOME_URL="http://archlinuxarm.org/"
+SUPPORT_URL="https://archlinuxarm.org/forum"
+BUG_REPORT_URL="https://github.com/archlinuxarm/PKGBUILDs/issues"
+
+
+uname:Linux 3.18.31-12576805 #1 SMP PREEMPT Mon Dec 11 19:26:42 KST 2017 armv7l
+libc:glibc 2.26 NPTL 2.26 
+rlimit: STACK 8192k, CORE 0k, NPROC 9522, NOFILE 4096, AS infinity
+load average:12.93 5.75 2.19
+
+/proc/meminfo:
+MemTotal:        1377920 kB
+MemFree:           20824 kB
+MemAvailable:     517248 kB
+Buffers:           13208 kB
+Cached:           496172 kB
+SwapCached:        15984 kB
+Active:           506212 kB
+Inactive:         502296 kB
+Active(anon):     251480 kB
+Inactive(anon):   249980 kB
+Active(file):     254732 kB
+Inactive(file):   252316 kB
+Unevictable:         576 kB
+Mlocked:             576 kB
+HighTotal:        929792 kB
+HighFree:           6292 kB
+LowTotal:         448128 kB
+LowFree:           14532 kB
+SwapTotal:       1048572 kB
+SwapFree:         728540 kB
+Dirty:               704 kB
+Writeback:            72 kB
+AnonPages:        497872 kB
+Mapped:           250860 kB
+Shmem:              2212 kB
+Slab:              84280 kB
+SReclaimable:      22112 kB
+SUnreclaim:        62168 kB
+KernelStack:       17832 kB
+PageTables:        47424 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1737532 kB
+Committed_AS:   62160908 kB
+VmallocTotal:     385024 kB
+VmallocUsed:      148120 kB
+VmallocChunk:     139940 kB
+
+
+CPU:total 4 (initial active 4) 
+
+/proc/cpuinfo:
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: Qualcomm Technologies, Inc MSM8917
+Revision	: 0004
+Serial		: 3010295047
+Processor	: ARMv7 Processor rev 4 (v7l)
+
+
+Memory: 4k page, physical 1377920k(20700k free), swap 1048572k(728540k free)
+
+vm_info: OpenJDK Zero VM (25.162-b12) for linux-arm JRE (1.8.0_162-b12), built on Mar  1 2018 20:10:21 by "builduser" with gcc 7.2.1 20180116
+
+time: Wed Mar  7 02:10:03 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
